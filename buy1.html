@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width=, initial-scale=1.0">
+    <title>Buy Bitcoin</title>
+    <link rel="stylesheet" href="buy-styles.css">
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+#buy-bitcoin {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#buy-bitcoin h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#buy-bitcoin p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.amount-options {
+    list-style: none;
+    padding: 0;
+}
+
+.amount-options li {
+    background-color: #333;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    transition: background-color 0.3s;
+    text-align: left;
+    font-size: 18px;
+}
+
+.amount-options li:hover {
+    background-color: #444;
+}
+
+form {
+    margin-top: 10px;
+}
+
+footer {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">CryptoMacX India</div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#login">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="buy-bitcoin">
+            <h1>Buy Bitcoin</h1>
+            <p>Select the amount you wish to invest in Bitcoin and complete your purchase using Razorpay.</p>
+            <ul class="amount-options">
+                <li>
+                    ₹100 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Oim9T1JRtcUod8" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹500 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example1" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹1,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example2" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹2,500 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example3" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹5,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example4" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹10,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example5" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹25,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example6" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹50,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example7" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹75,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example8" async> </script>
+                    </form>
+                </li>
+                <li>
+                    ₹1,00,000 {10% fees will be deducted}
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Example9" async> </script>
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CryptoMacX India. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
