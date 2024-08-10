@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMacX India Market</title>
+    <link rel="stylesheet" href="market-styles.css">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+#market {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#market h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.market-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crypto-card {
+    background-color: #333;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.crypto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.crypto-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.crypto-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.crypto-card button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #00bcd4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.crypto-card button:hover {
+    background-color: #0097a7;
+}
+
+footer {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
+``
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">CryptoMacX India</div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#login">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="market">
+            <h1>Cryptocurrency Market</h1>
+            <div class="market-container">
+                <div class="crypto-card">
+                    <img src="bitcoin.jpg" alt="Bitcoin">
+                    <h3>Bitcoin (BTC)</h3>
+                    <p>Trade the most popular cryptocurrency, Bitcoin.</p>
+                    <button onclick="location.href='buy1.html?crypto=bitcoin'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="ethereum.jpg" alt="Ethereum">
+                    <h3>Ethereum (ETH)</h3>
+                    <p>Purchase Ethereum, the foundation for decentralized applications.</p>
+                    <button onclick="location.href='buy2.html?crypto=ethereum'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="binance.jpg" alt="Binance Coin">
+                    <h3>Binance Coin (BNB)</h3>
+                    <p>Invest in Binance Coin for exclusive benefits on Binance.</p>
+                    <button onclick="location.href='buy3.html?crypto=binance'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="ripple.jpg" alt="Ripple">
+                    <h3>Ripple (XRP)</h3>
+                    <p>Join the global payments revolution with Ripple.</p>
+                    <button onclick="location.href='buy4.html?crypto=ripple'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="cardano.jpg" alt="Cardano">
+                    <h3>Cardano (ADA)</h3>
+                    <p>Explore the blockchain of the future with Cardano.</p>
+                    <button onclick="location.href='buy5.html?crypto=cardano'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="dogecoin.jpg" alt="Dogecoin">
+                    <h3>Dogecoin (DOGE)</h3>
+                    <p>Experience the meme-based cryptocurrency phenomenon.</p>
+                    <button onclick="location.href='buy6.html?crypto=dogecoin'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="solana.jpg" alt="Solana">
+                    <h3>Solana (SOL)</h3>
+                    <p>Invest in the high-performance blockchain platform, Solana.</p>
+                    <button onclick="location.href='buy7.html?crypto=solana'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="polkadot.jpg" alt="Polkadot">
+                    <h3>Polkadot (DOT)</h3>
+                    <p>Join the multi-chain future with Polkadot.</p>
+                    <button onclick="location.href='buy8.html?crypto=polkadot'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="polygon.jpg" alt="Polygon">
+                    <h3>Polygon (MATIC)</h3>
+                    <p>Buy Polygon for scalable blockchain solutions.</p>
+                    <button onclick="location.href='buy9.html?crypto=polygon'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="litecoin.jpg" alt="Litecoin">
+                    <h3>Litecoin (LTC)</h3>
+                    <p>Invest in Litecoin for fast and low-cost payments.</p>
+                    <button onclick="location.href='buy10.html?crypto=litecoin'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="chainlink.jpg" alt="Chainlink">
+                    <h3>Chainlink (LINK)</h3>
+                    <p>Explore the world of smart contracts with Chainlink.</p>
+                    <button onclick="location.href='buy11.html?crypto=chainlink'">Buy Now</button>
+                </div>
+                <div class="crypto-card">
+                    <img src="avalanche.jpg" alt="Avalanche">
+                    <h3>Avalanche (AVAX)</h3>
+                    <p>Join the next-gen blockchain platform, Avalanche.</p>
+                    <button onclick="location.href='buy12.html?crypto=avalanche'">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CryptoMacX India. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
