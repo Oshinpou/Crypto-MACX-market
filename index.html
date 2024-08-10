@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMacX India</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+#hero {
+    text-align: center;
+    padding: 150px 20px;
+    background: #000;
+    background-size: cover;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00bcd4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hero button:hover {
+    background-color: #0097a7;
+}
+
+#features, #benefits, #testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.crypto-icons table {
+    margin: 0 auto;
+}
+
+.crypto-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.animated-definition {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">CryptoMacX India</div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#buy">Buy Cryptocurrency</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#login">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>CryptoMacX India</h1>
+            <p>Securely Buy Cryptocurrencies with INR</p>
+            <button onclick="market.html">Get Started</button>
+        </section>
+
+        <section id="features">
+            <h2>Why Choose CryptoMacX India?</h2>
+            <p>Buy cryptocurrency with INR through Razorpay securely. Enjoy a user-friendly interface, multiple payment options, and fast transactions.</p>
+            <div class="crypto-icons">
+                <table>
+                    <tr>
+                        <td><img src="bitcoin.jpg" alt="Bitcoin"></td>
+                        <td><img src="ethereum.jpg" alt="Ethereum"></td>
+                        <td><img src="binance.jpg" alt="Binance Coin"></td>
+                        <td><img src="ripple.jpg" alt="Ripple"></td>
+                        <td><img src="cardano.jpg" alt="Cardano"></td>
+                        <td><img src="dogecoin.jpg" alt="Dogecoin"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="solana.jpg" alt="Solana"></td>
+                        <td><img src="polkadot.jpg" alt="Polkadot"></td>
+                        <td><img src="polygon.jpg" alt="Polygon"></td>
+                        <td><img src="litecoin.jpg" alt="Litecoin"></td>
+                        <td><img src="chainlink.jpg" alt="Chainlink"></td>
+                        <td><img src="avalanche.jpg" alt="Avalanche"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>Platform Benefits</h2>
+            <ul>
+                <li>User-Friendly Interface</li>
+                <li>Multiple Payment Options: Paytm, GPay, Credit/Debit Cards</li>
+                <li>Fast and Reliable Transactions</li>
+                <li>Robust Security Features</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Users Say</h2>
+            <blockquote>"CryptoMacX India provides an incredibly secure and smooth transaction process. Highly recommended!"</blockquote>
+            <blockquote>"Great user experience and fast processing times make this platform a winner."</blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <div class="animated-definition">
+            <p id="definition-text"></p>
+        </div>
+        <div class="contact-info">
+            <p>Contact Us: macxyy12@gmail.com | +91 8452939172</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/oshino.cryptocoin?mibextid=ZbWKwL"><img src="FB.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/macyofficial120000?igsh=MThuNHkwdGlza3kwaQ=="><img src="INS.jpg" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+    function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    if (navbar.style.display === 'block') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'block';
+    }
+}
+
+// Animated Typing Effect
+const text = "CryptoMacX India revolutionizes cryptocurrency buying, offering a secure, seamless experience for Indians. With Razorpay's cutting-edge technology, purchase your favorite cryptocurrencies like Bitcoin, Ethereum, and more using INR. Enjoy peace of mind with our robust security measures, ensuring your transactions are protected at every step. Experience lightning-fast transactions, multiple payment options, and an intuitive interface designed for ease and efficiency. Join thousands of satisfied users on CryptoMacX India and embark on your crypto journey today—safe, secure, and simple. Your future in digital currency starts here.";
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("definition-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeWriter);
+    </script>
+</body>
+</html>
